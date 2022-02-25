@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Iframes</h2>
+<p>You can use the height and width attributes to specify the size of the iframe:</p>
+
+<iframe src="www.creathus.org.br" height="600" width="600" title="Iframe Example"></iframe>
+
+<style> html{display:none;} </style>
+<script type="text/javascript">
+    $(document).ready(function () {
+        if(window.self == window.top) {
+            document.documentElement.style.display = 'block'; }
+        else {
+       window.top.location = window.self.location; }
+    });
+</script>
+</body>
+</html>
+
